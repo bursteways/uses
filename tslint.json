@@ -1,0 +1,246 @@
+{
+  "extends": [],
+  "rulesDirectory": ["codelyzer"],
+  "rules": {
+    // Disallows explicit type declarations for variables/parameters initialized to a number, string, or boolean.
+    "no-inferrable-types": {
+      "options": "ignore-params",
+      "severity": "error"
+    },
+
+    //Ensures imports are consistent and tidy.
+    "import-destructuring-spacing": { "severity": "error" },
+
+    //Enforces braces for if/for/do/while statements.
+    "curly": { "severity": "error" },
+
+    //Requires using either ‘T[]’ or ‘Array' for arrays.
+    "array-type": {
+      "options": "array",
+      "severity": "error"
+    },
+
+    //Suggests to convert () => { return x; } to () => x.
+    "arrow-return-shorthand": { "severity": "error" },
+
+    //Enforces/disallows use of ES6 object literal shorthand.
+    "object-literal-shorthand": { "severity": "error" },
+
+    //Require or disallow a space before function parenthesis
+    "space-before-function-paren": { "severity": "error", "options": [{ "asyncArrow": "always" }] },
+
+    //Enforces vertical alignment.
+    "align": { "severity": "error" },
+
+    //Checks that decimal literals should begin with ‘0.’ instead of just ‘.’, and should not end with a trailing ‘0’.
+    "number-literal-format": { "severity": "error" },
+
+    // Warns when deprecated APIs are used.
+    "deprecation": { "severity": "warn" },
+
+    // Helps with tree-shaken modules. Don't pull in the whole library, just the sub-module you need.
+    "import-blacklist": {
+      "options": "rxjs",
+      "severity": "warn"
+    },
+
+    // Helps force "I" prefix for interface example: export interface IFoo {...}.
+    "interface-name": { "options": "always-prefix", "severity": "warn" },
+
+    // A file may not contain more than the specified number of classes. Each file has a single responsibility.
+    "max-classes-per-file": { "options": 1, "severity": "warn" },
+
+    // Helps enforce a consistent ordering for class members.
+    "member-ordering": {
+      "options": [
+        {
+          "order": ["static-field", "instance-field", "static-method", "instance-method"]
+        }
+      ],
+      "severity": "warn"
+    },
+
+    // Disallows one or more blank lines in a row.
+    "no-consecutive-blank-lines": { "severity": "warn" },
+
+    // Remove all console code before commits.
+    "no-console": {
+      "options": ["log", "debug", "info", "time", "timeEnd", "trace"],
+      "severity": "warn"
+    },
+
+    // Disallows empty blocks (aside from comments).
+    "no-empty": { "severity": "warn" },
+
+    // No need for non-null assertions using the ! postfix operator.
+    "no-non-null-assertion": { "severity": "warn" },
+
+    // Disallows falling through case statements.
+    "no-switch-case-fall-through": { "severity": "warn" },
+
+    // Show a warning when using "any" as a type.
+    "no-any": { "severity": "warn" },
+
+    // Disallows unused imports, variables, functions and private class members.
+    "no-unused-variable": {
+      "options": {
+        "ignore-pattern": "^_"
+      },
+      "severity": "warn"
+    },
+
+    // Disallows usage of variables before their declaration.
+    "no-use-before-declare": { "severity": "warn" },
+
+    // Disallows the use of require statements except in import statements.
+    "no-var-requires": { "severity": "warn" },
+
+    // Keeps things as close to JSON-style as possible.
+    "object-literal-key-quotes": {
+      "options": "consistent",
+      "severity": "warn"
+    },
+
+    //Forbids empty interfaces.
+    "no-empty-interface": {
+      "severity": "warn"
+    },
+
+    //Disallows the use constant number values outside of variable assignments.
+    "no-magic-numbers": {
+      "severity": "warn"
+    },
+
+    //Ban the usage of for…in statements.
+    "no-for-in": {
+      "severity": "warn"
+    },
+
+    //Requires type definitions to exist.
+    "typedef": {
+      "severity": "warn"
+    },
+
+    //Prevents using the built-in Function constructor.
+    "function-constructor": {
+      "severity": "warn"
+    },
+
+    //Disallows debugger statements.
+    "no-debugger": {
+      "severity": "warn"
+    },
+
+    //Warns if ‘super()’ appears twice in a constructor.
+    "no-duplicate-super": {
+      "severity": "warn"
+    },
+
+    //Prevents duplicate cases in switch statements.
+    "no-duplicate-switch-case": {
+      "severity": "warn"
+    },
+
+    //Disallows duplicate variable declarations in the same block scope.
+    "no-duplicate-variable": {
+      "severity": "warn"
+    },
+
+    //Forbids array literals to contain missing elements.
+    "no-sparse-arrays": {
+      "severity": "warn"
+    },
+
+    //Enforces that relational/equality binary operators does not take two equal variables/literals as operands.
+    "no-tautology-expression": {
+      "severity": "warn"
+    },
+
+    //Warns when using an expression of type ‘any’ in a dynamic way.
+    "no-unsafe-any": {
+      "severity": "warn"
+    },
+
+    //Disallows usage of the var keyword.
+    "no-var-keyword": {
+      "severity": "error"
+    },
+
+    //Enforces the use of the ES2018 object spread operator over Object.assign() where appropriate.
+    "prefer-object-spread": {
+      "severity": "warn"
+    },
+
+    //Require a default case in all switch statements.
+    "switch-default": {
+      "severity": "warn"
+    },
+
+    // /Makes sure result of typeof is compared to correct string values
+    "typeof-compare": {
+      "severity": "warn"
+    },
+
+    //Enforces use of the isNaN() function to check for NaN references instead of a comparison to the NaN constant.
+    "use-isnan": {
+      "severity": "warn"
+    },
+
+    //Disallows multiple import statements from the same module.
+    "no-duplicate-imports": {
+      "severity": "warn"
+    },
+
+    //Disallows invocation of require().
+    "no-require-imports": {
+      "severity": "warn"
+    },
+
+    //Requires that variable declarations use const instead of let and var if possible.
+    "prefer-const": {
+      "severity": "warn"
+    },
+
+    //In a binary expression, a literal should always be on the right-hand side if possible.
+    "binary-expression-operand-order": {
+      "severity": "warn"
+    },
+
+    //Enforces PascalCased class and interface names.
+    "class-name": {
+      "severity": "warn"
+    },
+
+    //Enforces formatting rules for single-line comments.
+    "comment-format": {
+      "options": "check-space",
+      "severity": "warn"
+    },
+
+    //Forbids a ‘var’/’let’ statement or destructuring initializer to be initialized to ‘undefined’.
+    "no-unnecessary-initializer": {
+      "severity": "warn"
+    },
+
+    //Disallows multiple variable definitions in the same declaration statement.
+    "one-variable-per-declaration": {
+      "options": "ignore-for-loop",
+      "severity": "warn"
+    },
+
+    // Angular specific.
+    "use-input-property-decorator": { "severity": "warn" },
+    "use-output-property-decorator": { "severity": "warn" },
+    "use-host-property-decorator": { "severity": "warn" },
+    "no-input-rename": { "severity": "warn" },
+    "no-output-rename": { "severity": "warn" },
+    "use-life-cycle-interface": { "severity": "warn" },
+    "use-pipe-transform-interface": { "severity": "warn" },
+    "component-class-suffix": { "severity": "warn" },
+    "directive-class-suffix": { "severity": "warn" },
+    "contextual-decorator": { "severity": "warn" },
+    "contextual-lifecycle": { "severity": "warn" },
+    "use-component-selector": { "severity": "warn" },
+    "use-pipe-decorator": { "severity": "warn" }
+  }
+}
