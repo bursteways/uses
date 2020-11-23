@@ -1,0 +1,12 @@
+// https://github.com/renovatebot/renovate
+
+{
+  "extends": ["config:base"],
+  "automerge": true,
+  "major": { "automerge": false },
+  "prHourlyLimit": 2,
+  "updateNotScheduled": false,
+  "timezone": "America/New_York",
+  "schedule": [ "every weekend" ],
+  "masterIssue": true
+}
