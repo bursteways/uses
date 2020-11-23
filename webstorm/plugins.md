@@ -9,6 +9,7 @@
 - JS GraphQL
 - Json Parser
 - Lines Sorter
+- Material Theme UI
 - Material Theme UI Lite
 - PostCSS
 - Source Synchronizer
