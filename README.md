@@ -1,2 +1,2 @@
 # uses
-My personal preferences for configurations
+My personal preferences and configurations
