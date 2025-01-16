@@ -1,0 +1,32 @@
+{
+  "workbench.colorTheme": "One Dark Pro",
+  "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "files.autoSave": "onWindowChange",
+  "workbench.iconTheme": "vscode-icons",
+  "gitlens.gitCommands.search.showResultsInSideBar": false,
+  "editor.tabSize": 2,
+  "window.zoomLevel": 1,
+  "explorer.compactFolders": false,
+  "editor.hover.delay": 500,
+  "editor.folding": true,
+  "editor.foldingStrategy": "indentation",
+  "editor.fontSize": 12,
+  "editor.fontLigatures": true,
+  "explorer.autoReveal": false,
+  "explorer.expandSingleFolderWorkspaces": false,
+  "terminal.integrated.fontSize": 12,
+  "editor.semanticHighlighting.enabled": true,
+  "workbench.editor.wrapTabs": true,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "editor.minimap.enabled": false,
+  "prettier.prettierPath": "./node_modules/prettier",
+  "prettier.requireConfig": true,
+  "prettier.configPath": "/Users/stephenburke/Desktop/Projects/racealot/.prettierrc",
+  "prettier.trailingComma": "all",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "gitlens.codeLens.enabled": false
+}
